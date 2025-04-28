@@ -1,4 +1,27 @@
-    - Commandes shell à mettre en place
+    - Minishell 
+
+- Shell : Interpréteur de commandes. Programme qui fait le lien entre l'useur et l'os. Il interprète mes commandes puis les exe.
+- Le Shell historique = Bourne Shelle crée en 1977
+- Le projet se base sur le Bash: https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html (miam le manuel).
+
+    - Ce qu'il va falloir faire:
+
+- Affichage d'un prompt
+- Lire et analyser les prompt
+- Historique
+- Rechercher et lancer l'exe approprié (variable PATH ou en utilisant chemin relatif ou absolu)
+- 1 seule variable globale : pour signal reçu (cette varialbe doit uniquement stocker le n° du signal)
+- Ne pas interprété les "" non fermé, caractere spéciaux, \, ;
+- Gestion des ' ' (empêche le shell d'interpréter les métacaractere dans la séquence cité)
+- Gestion des " " (empêche shelle d'interpréter les métacaractere sauf $
+- Redirection: < (entrée); > (sortie); << (délimiteur, lit entrée jusqu'a ce qu'une ligne contenant le délimiteur soit vu, ne dois pas mettre à jour l'historique); >> (redirige sortie en mode ajout)
+- Pipe |
+- Variable d'environnement $ [chaine de caractère]
+- Gestion $?
+- Gestion ctrl-C = affiche un nouveau prompt sur une nouvelle ligne, ctrl-D = quitte shell ctr-\ = ne fait rien
+      - Bonus : && et || avec des parenthese pour gérer les prio, *(wilcard) 
+  
+  - Commandes shell à mettre en place
 
 | Nom de la commande | Prototype / Utilisation | Description |
 |:-------------------|:------------------------|:------------|
