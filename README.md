@@ -2,8 +2,7 @@
 
 - Shell : Interpréteur de commandes. Programme qui fait le lien entre l'useur et l'os. Il interprète mes commandes puis les exe.
 - Le Shell historique = Bourne Shelle crée en 1977
-- Le projet se base sur le Bash: https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html (miam le manuel).
-
+- Le projet se base sur le Bash: https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html (miam le manuel).  http://manpagesfr.free.fr/man/man1/bash.1.html
     - Ce qu'il va falloir faire:
 
 - Affichage d'un prompt
@@ -19,7 +18,7 @@
 - Variable d'environnement $ [chaine de caractère]
 - Gestion $?
 - Gestion ctrl-C = affiche un nouveau prompt sur une nouvelle ligne, ctrl-D = quitte shell ctr-\ = ne fait rien
-      - Bonus : && et || avec des parenthese pour gérer les prio, *(wilcard) 
+- Bonus : && et || avec des parenthese pour gérer les prio, *(wilcard) 
   
   - Commandes shell à mettre en place
 
@@ -42,7 +41,7 @@
 |:-------------------|:----------|:------------|
 | readline | `char *readline(const char *prompt);` | Lit une ligne complète entrée par l'useur, retourne une chaîne allouée dynamiquement sans \n. Présente des leaks ! |
 | rl_clear_history | `void rl_clear_history(void);` | Efface l'historique des lignes lues pendant l'exécution. |
-| rl_on_new_line | `int rl_on_new_line(void);` |  |
+| rl_on_new_line | `int rl_on_new_line(void);` |   |
 | rl_replace_line | `int rl_replace_line(const char *text, int clear_undo);` |  |
 | rl_redisplay | `void rl_redisplay(void);` |  |
 | add_history | `void add_history(const char *line);` | Ajoute une ligne à l'historique |
